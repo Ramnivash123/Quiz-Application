@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Mate - E-learning at your home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a class="py-4 text-xl font-bold" href="#">CLASS MATE</a>
+                <button class="md:hidden" id="menuButton">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="hidden md:flex" id="navMenu">
+                    <ul class="flex space-x-6">
+                        <li><a class="hover:text-blue-200" href="#home">Home</a></li>
+                        <li><a class="hover:text-blue-200" href="#about">About</a></li>
+                        <li><a class="hover:text-blue-200" href="#features">Features</a></li>
+                        <li><a class="hover:text-blue-200" href="#courses">Courses</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h1 class="text-5xl font-bold mb-6">
+                            Lets <span class="text-blue-600">E-learning</span><br>
+                            at your home
+                        </h1>
+                        <p class="text-gray-600 mb-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <button id="getStartedBtn" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition">
+                            GET STARTED
+                        </button>
+                    </div>
+                    <div>
+                        <img src="images/main.png" alt="Student learning" class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12">About Class Mate</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Class Mate is a cutting-edge e-learning platform designed to revolutionize the way students and teachers interact in the digital age. Our mission is to make high-quality education accessible to everyone, anywhere, at any time.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8">
+                            With a team of dedicated educators and tech experts, we've created a user-friendly platform that caters to various learning styles and educational needs. Whether you're a student looking to excel in your studies or a teacher aiming to reach a global audience, Class Mate provides the tools and resources you need to succeed.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-book text-blue-600 text-3xl mr-3"></i>
+                                <span class="text-xl font-semibold">1000+ Courses</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-blue-600 text-3xl mr-3"></i>
+                                <span class="text-xl font-semibold">50,000+ Students</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="images/about.png" alt="Students learning online" class="w-full rounded-lg shadow-lg">
+                        <div class="absolute -bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg">
+                            Join Us Today!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12">Empowering Your Learning Journey</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-clock text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Beat Procrastination</h3>
+                        <p class="text-gray-600">Our innovative tools and techniques help you overcome procrastination and stay on track with your studies.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-tasks text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Easy Online Tests & Exams</h3>
+                        <p class="text-gray-600">Experience hassle-free online assessments with our user-friendly platform, designed to make testing a breeze.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-chart-bar text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Analytics-Based Feedback</h3>
+                        <p class="text-gray-600">Get personalized insights and recommendations based on your performance, helping you focus on areas that need improvement.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg hover:bg-blue-700 transition">Start Learning Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <span>&copy; 2024 Class Mate. All rights reserved.</span>
+                <div class="space-x-4">
+                    <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <button id="chatToggle" class="fixed bottom-6 right-6 bg-blue-600 text-white rounded-full p-4 shadow-lg hover:bg-blue-700 transition">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot" class="fixed bottom-24 right-6 bg-white rounded-lg shadow-xl w-80 hidden">
+        <div class="flex justify-between items-center p-4 border-b">
+            <h5 class="text-blue-600 font-bold">Chatbot</h5>
+            <button id="closeChat" class="text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="chatMessages" class="p-4 bg-gray-50 h-72 overflow-y-auto">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="p-4 border-t">
+            <div class="flex gap-2">
+                <input type="text" id="messageInput" class="flex-grow px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-600" placeholder="Type your message...">
+                <button id="sendMessage" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Role Selection Modal -->
+    <div id="roleModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-md w-full mx-4">
+            <div class="border-b p-4">
+                <div class="flex justify-between items-center">
+                    <h5 class="text-blue-600 text-xl font-bold">Select Your Role</h5>
+                    <button class="text-gray-500 hover:text-gray-700" data-modal-close>
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="p-6">
+                <div class="mb-8 text-center">
+                    <h6 class="mb-4">Student</h6>
+                    <div class="flex justify-center gap-4">
+                        <button id="studentSignIn" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Sign In</button>
+                        <button id="studentSignUp" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700">Sign Up</button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h6 class="mb-4">Teacher</h6>
+                    <div class="flex justify-center gap-4">
+                        <button id="teacherSignIn" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Sign In</button>
+                        <button id="teacherSignUp" class="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle
+            const menuButton = document.getElementById('menuButton');
+            const navMenu = document.getElementById('navMenu');
+            menuButton?.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+
+            // Modal functionality
+            const roleModal = document.getElementById('roleModal');
+            const getStartedBtn = document.getElementById('getStartedBtn');
+            const modalCloseBtn = document.querySelector('[data-modal-close]');
+
+            getStartedBtn?.addEventListener('click', () => {
+                roleModal.classList.remove('hidden');
+            });
+
+            modalCloseBtn?.addEventListener('click', () => {
+                roleModal.classList.add('hidden');
+            });
+
+            // Chat functionality
+            const chatToggle = document.getElementById('chatToggle');
+            const chatbot = document.getElementById('chatbot');
+            const closeChat = document.getElementById('closeChat');
+            const chatMessages = document.getElementById('chatMessages');
+            const messageInput = document.getElementById('messageInput');
+            const sendMessage = document.getElementById('sendMessage');
+
+            chatToggle?.addEventListener('click', () => {
+                chatbot.classList.toggle('hidden');
+            });
+
+            closeChat?.addEventListener('click', () => {
+                chatbot.classList.add('hidden');
+            });
+
+            function addMessage(message, isUser = true) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `mb-2 p-2 rounded-lg ${isUser ? 'bg-blue-600 text-white ml-auto' : 'bg-gray-200 text-gray-800 mr-auto'}`;
+                messageDiv.style.maxWidth = '75%';
+                messageDiv.textContent = message;
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            sendMessage?.addEventListener('click', () => {
+                const message = messageInput.value.trim();
+                if (message) {
+                    addMessage(message);
+                    messageInput.value = '';
+                    setTimeout(() => {
+                        addMessage("Thank you for your message. How can I assist you today?", false);
+                    }, 1000);
+                }
+            });
+
+            messageInput?.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage.click();
+                }
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Role buttons functionality
+            const buttons = {
+                studentSignIn: 'stu_signin.php',
+                studentSignUp: 'stu_signup.php',
+                teacherSignIn: 'tea_signin.php',
+                teacherSignUp: 'tea_signup.php'
+            };
+
+            Object.entries(buttons).forEach(([id, url]) => {
+                document.getElementById(id)?.addEventListener('click', () => {
+                    window.location.href = url;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
