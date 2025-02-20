@@ -61,6 +61,7 @@ foreach ($result as $row) {
                                 <th>Wrong</th>
                                 <th>Marks</th>
                                 <th>Time</th>
+                                <th></th>
                             </tr>
                           </thead>';
                     echo '<tbody>';
@@ -71,6 +72,7 @@ foreach ($result as $row) {
                         echo '<td><span class="text-danger">' . htmlspecialchars($mark['wrong']) . '</span></td>';
                         echo '<td><strong>' . htmlspecialchars($mark['marks']) . '</strong></td>';
                         echo '<td>' . htmlspecialchars($mark['time_difference']) . '</td>';
+                        echo '<td><a href="check_marks.php">check marks</a></td>';
                         echo '</tr>';
                     }
                     echo '</tbody>';
